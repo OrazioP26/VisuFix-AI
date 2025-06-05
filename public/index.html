@@ -1,13 +1,170 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../src/output.css" rel="stylesheet" />
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- Load DM Sans from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind’s compiled CSS (goes up one level) -->
+    <link href="../src/output.css" rel="stylesheet" />
+
+    <title>VisuFix AI</title>
+  </head>
+
+  <body
+    class="
+      min-h-screen
+      bg-[linear-gradient(180deg,#6368B4_0%,#E0E7FF_70%,#E0E7FF_100%)]
+      text-center text-[#1F2152] font-sans
+    "
+  >
+    <!-- =================== -->
+    <!-- ✅ NAVBAR -->
+    <!-- =================== -->
+    <nav class="w-full flex items-center justify-between px-8 py-4 bg-[#E9ECF8] border-b border-gray-300">
+      <!-- Left: Logo + Brand -->
+      <div class="flex items-center gap-2">
+        <img src="./VisuFix Logo.svg" alt="VisuFix Logo" class="w-11 h-11" />
+        <h1 class="font-sans text-[23px] font-medium tracking-tight text-[#1F2152]">
+          VisuFix AI
+        </h1>
+      </div>
+
+      <!-- Center: Nav Links -->
+      <ul class="hidden md:flex gap-6 text-sm font-medium text-[#1F2152]">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Use cases</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+
+      <!-- Right: Log in + Sign up -->
+      <div class="flex items-center gap-4">
+        <a
+          href="#"
+          class="
+            font-sans font-medium
+            text-[13px] tracking-tight leading-none
+            text-[#000000]
+          "
+        >
+          Log in
+        </a>
+
+        <a
+          href="#"
+          class="
+            w-[75px] h-[32px] rounded-[12px] shrink-0
+            bg-[linear-gradient(181deg,#38BDF8_0.9%,rgba(0,113,227,0.85)_99.09%)]
+            shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]
+            flex items-center justify-center
+            text-[13px] font-sans font-medium tracking-tight
+            text-[#E6E6E6]
+          "
+        >
+          Sign up
+          <img
+            src="./Arrow1.svg"
+            alt="Arrow icon"
+            class="ml-2 w-[17px] h-[17px]"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- horizontal line right under the navbar -->
+    <hr class="w-full border-t-[2px] border-[#1F2152]" />
+
+    <!-- =========================== -->
+    <!-- ✅ HERO SECTION (pixel-perfect) -->
+    <!-- =========================== -->
+    <section
+      class="
+        flex flex-col items-center
+        px-4
+        pt-[100px]
+      "
+    >
+      <h2
+        class="
+          font-sans font-medium
+          text-[54px] leading-none
+          tracking-[-0.04em] text-[#1F2152]
+          max-w-[426px] text-center
+        "
+      >
+        Polished slides.<br />
+        Zero design effort.
+      </h2>
+
+      <p
+        class="
+          font-sans font-light
+          text-[20px] leading-none
+          tracking-[-0.04em] text-[#161958]
+          max-w-[369px] text-center
+          mt-[38px]
+        "
+      >
+        AI-powered fixes for cleaner, smarter visuals
+      </p>
+
+      <a
+        href="#"
+        class="
+          mt-[26px]
+          w-[174px] h-[48px]
+          shrink-0
+          rounded-[12px]
+          bg-[linear-gradient(180deg,#38BDF8_0.05%,rgba(0,113,227,0.85)_99.94%)]
+          shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]
+          flex items-center justify-center
+          text-[18px] font-sans font-medium tracking-[-0.04em]
+          text-[#E6E6E6]
+        "
+      >
+        Try VisuFix Free
+      </a>
+    </section>
+
+    <!-- ============================== -->
+    <!-- ✅ FEATURE BLURB (~80px below) -->
+    <!-- ============================== -->
+    <section class="mt-[80px] px-4 py-12 text-center">
+      <!-- "One click cleans your slides." -->
+      <h3
+        class="
+          font-sans font-medium
+          text-[30px] leading-none
+          tracking-[-0.04em] text-[#1E0C41]
+          max-w-[364px] mx-auto
+        "
+      >
+        One click cleans your slides.
+      </h3>
+
+      <!-- “VisuFix removes clutter…” subtext -->
+      <p
+        class="
+          font-sans font-light
+          text-[18px] leading-none
+          tracking-[-0.04em] text-[#000000]
+          max-w-[333px] mx-auto
+          mt-[12px]
+        "
+      >
+        VisuFix removes clutter, aligns content, and<br />
+        sharpens your assets – instantly
+      </p>
+    </section>
+  </body>
 </html>
